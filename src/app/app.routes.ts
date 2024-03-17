@@ -8,14 +8,17 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { NavComponent } from './components/nav/nav.component';
 import { ServicesComponent } from './components/services/services.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 export const routes: Routes = [
 
-    {path:'home', component: HeaderComponent},
-    {path:'about', component: AboutComponent},
-    {path:'clients', component: ClientsComponent},
-    {path:'pricing', component: PricingComponent},
-    {path:'testimonials', component: TestimonialsComponent},
-    {path:'gallery', component: GalleryComponent},
-    {path:'services', component: ServicesComponent},
+    {title: "LP | Home", path:'home', component: HeaderComponent},
+    {title: "LP | Home", path:'home', component: HeaderComponent},
+    {title: "LP | About", path:'about', component: AboutComponent},
+    {title: "LP | Clients", path:'clients', component: ClientsComponent},
+    {title: "LP | Pricing", path:'pricing', component: PricingComponent},
+    {title: "LP | Testimonials", path:'testimonials', component: TestimonialsComponent},
+    {title: "LP | Gallery", path:'gallery', component: GalleryComponent},
+    {title: "LP | Services", path:'services', component: ServicesComponent},
+    {title: "LP | Not Found", path:'**', component: NotfoundComponent},
 ];

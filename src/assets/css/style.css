@@ -133,6 +133,10 @@ figure {
     position: relative;
 }
 
+.big-text{
+    font-size: 300px;
+    color: #111;
+}
 
 /* --------- 1.1 Input Elements ---------- */
 
@@ -1396,7 +1400,7 @@ blockquote {
 .client-overlay {
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
-    top;
+    top:
     0;
     right: 0;
     bottom: 0;
