@@ -1,5 +1,6 @@
 export interface ConfigItem {
-    property) ConfigService.configuration: ({
+
+    configuration: {
         id: number;
         name: string;
         data: {
@@ -13,4 +14,5 @@ export interface ConfigItem {
                 title: string;
                 description: string;
             }[];
-}
+            }
+    }
