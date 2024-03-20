@@ -15,13 +15,12 @@ export class AboutComponent {
     buttontext: "START CREATING TODAY",
     IconBlock: [
       {id: 1, icon:"fa-html5",title: "HTML5 &amp CSS3", description: "Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro nemore vivendum"},
-      {id: 2, title:"fa-bolt", "Easy to Use", description: "Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro nemore vivendum"},
-      {id: 3, title:"fa-tablet", "Fully Responsive", description: "Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro nemore vivendum"},
-      {id: 4, title:"fa-rocket", "Parallax Effect", description: "Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro nemore vivendum"}
+      {id: 2, icon:"fa-bolt", title: "Easy to Use", description: "Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro nemore vivendum"},
+      {id: 3, icon:"fa-tablet", title: "Fully Responsive", description: "Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro nemore vivendum"},
+      {id: 4, icon:"fa-rocket", title: "Parallax Effect", description: "Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro nemore vivendum"}
   ]
   
 }
-
-  }
+}
 
 
