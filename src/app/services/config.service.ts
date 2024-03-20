@@ -6,6 +6,9 @@ import { ConfigItem} from './config-item';
   providedIn: 'root'
 })
 export class ConfigService {
+getPageByName(arg0: string): any {
+  throw new Error('Method not implemented.');
+}
 
 configuration : ConfigItem[] = [...
 ];
@@ -77,4 +80,11 @@ data:{
 ];
 
   constructor() { }
+  
+  getAllPages():ConfigItem[] {
+    return this.configuration;
+  }
+  getPageByName(pageName: string): ConfigItem | undefined {
+    return this.configuration.find ({ConfigItem} => ConfigItem.name === pageName);
+  }
 }
