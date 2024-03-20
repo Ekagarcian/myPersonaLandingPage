@@ -1,11 +1,15 @@
 import { Injectable } from '@angular/core';
+import { ConfigItem} from './config-item';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class ConfigService {
 
-  configuration = [
+configuration : ConfigItem[] = [...
+];
+
     {
       id:1,
       name:"about",
