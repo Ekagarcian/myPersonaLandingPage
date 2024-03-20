@@ -6,12 +6,10 @@ import { ConfigItem} from './config-item';
   providedIn: 'root'
 })
 export class ConfigService {
-getPageByName(arg0: string): any {
-  throw new Error('Method not implemented.');
+
 }
 
-configuration : ConfigItem[] = [...
-];
+configuration = [
 
     {
       id:1,
@@ -25,13 +23,12 @@ configuration : ConfigItem[] = [...
         {id: 1, icon:"fa-html5",title: "HTML5 &amp CSS3", description: "Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro nemore vivendum"},
         {id: 2, icon:"fa-bolt", title: "Easy to Use", description: "Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro nemore vivendum"},
         {id: 3, icon:"fa-tablet", title: "Fully Responsive", description: "Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro nemore vivendum"},
-        {id: 4, icon:"fa-rocket", title: "Parallax Effect", description: "Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro nemore vivendum"}
+        {id: 4, icon:"fa-rocket", title: "Parallax Effect", description: "Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro nemore vivendum"},
     ]
     
   }
   },
-  {
-    id:2,
+  {id:2,
     name:"client",
     data:{
       title:"TRUST",
@@ -80,7 +77,6 @@ data:{
 ];
 
   constructor() { }
-  
   getAllPages():ConfigItem[] {
     return this.configuration;
   }
