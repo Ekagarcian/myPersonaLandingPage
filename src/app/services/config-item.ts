@@ -1,5 +1,4 @@
 export interface ConfigItem {
-
     configuration: {
         id: number;
         name: string;
@@ -14,5 +13,6 @@ export interface ConfigItem {
                 title: string;
                 description: string;
             }[];
-            }
-    }
+        };
+    };
+}
