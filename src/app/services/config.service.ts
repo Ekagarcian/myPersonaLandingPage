@@ -7,8 +7,6 @@ import { ConfigItem} from './config-item';
 })
 export class ConfigService {
 
-}
-
 configuration = [
 
     {
