@@ -2,12 +2,13 @@ import { Injectable } from '@angular/core';
 import { ConfigItem} from './config-item';
 
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class ConfigService {
 
-configuration = [
+configuration = configItem [] = [
 
     {
       id:1,
@@ -79,6 +80,6 @@ data:{
     return this.configuration;
   }
   getPageByName(pageName: string): ConfigItem | undefined {
-    return this.configuration.find ({ConfigItem} => ConfigItem.name === pageName);
+    return this.configuration.find({ConfigItem} => ConfigItem.name === pageName);
   }
 }

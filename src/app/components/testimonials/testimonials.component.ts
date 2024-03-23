@@ -16,8 +16,6 @@ export class TestimonialsComponent {
 
   constructor(){
     this.testimonials = this.configService.getPageByName("testimonials")
-   
-      return 
     }
     
 

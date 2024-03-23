@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ConfigItem } from '../../services/config-item';
+import { ConfigService } from '../../services/config.service';
+ 
 
 @Component({
   selector: 'app-gallery',
@@ -8,18 +11,12 @@ import { Component } from '@angular/core';
   styleUrl: './gallery.component.scss'
 })
 export class GalleryComponent {
+  gallery!: ConfigItem | undefined;
+  configService: ConfigService = inject(ConfigService);
 
-  gallery = {
-    title: "Gallery",
-    description: "Project images",
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!",
-    GalleryImages: [
-      {id: 1, url:"../assets/images/gallery-images/gallery-image-1.png" , name:"Tree"},
-      {id: 2, url:"../assets/images/gallery-images/gallery-image-2.png" , name:"Fingerprint"}, 
-      {id: 3, url:"../assets/images/gallery-images/gallery-image-3.png" , name:"The Man"},
-      {id: 4, url:"../assets/images/gallery-images/gallery-image-4.png" , name:"Mustache"},
-      {id: 5, url:"../assets/images/gallery-images/gallery-image-5.png" , name:"Moose"},
-      {id: 6, url:"../assets/images/gallery-images/gallery-image-6.png" , name:"Justice"},
-   ] 
+  constructor(){
+    this.gallery = this.configService.getPageByName("gallery");
+    }
+ 
 }
-}
+

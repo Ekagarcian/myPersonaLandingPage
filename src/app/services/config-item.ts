@@ -13,6 +13,17 @@ export interface ConfigItem {
                 title: string;
                 description: string;
             }[];
+            companyBlocks: {
+                id: number;
+                Image: string;
+                name: string;
+            }[]
+            galleryBlocks: {
+                id: number;
+                url: string;
+                name: string;
+            }[]
+            
         };
     };
 }
