@@ -18,4 +18,4 @@ export class ServicesComponent {
     this.services = this.configService.getPageByName("services");
     }
 }
-}
+
