@@ -8,17 +8,18 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { NavComponent } from './components/nav/nav.component';
 import { ServicesComponent } from './components/services/services.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { NotfoundComponent } from './notfound/notfound.component';
+import { NotfoundComponent } from './components/notfound/notfound.component';
 
 export const routes: Routes = [
 
-    {title: "LP | Home", path:'home', component: HeaderComponent},
-    {title: "LP | Home", path:'home', component: HeaderComponent},
-    {title: "LP | About", path:'about', component: AboutComponent},
-    {title: "LP | Clients", path:'clients', component: ClientsComponent},
-    {title: "LP | Pricing", path:'pricing', component: PricingComponent},
-    {title: "LP | Testimonials", path:'testimonials', component: TestimonialsComponent},
-    {title: "LP | Gallery", path:'gallery', component: GalleryComponent},
-    {title: "LP | Services", path:'services', component: ServicesComponent},
-    {title: "LP | Not Found", path:'**', component: NotfoundComponent},
+    {title: "ADS | Home", path:'' , component: HeaderComponent},
+    {title: "ADS | Home", path:'home' , component: HeaderComponent},
+    {title: "ADS | About", path:'about' , component: AboutComponent},
+    {title: "ADS | Client", path:'clients' , component: ClientsComponent},
+    {title: "ADS | Pricing", path:'pricing' , component: PricingComponent},
+    {title: "ADS | Testimonials", path:'testimonials' , component: TestimonialsComponent},
+    {title: "ADS | Gallery", path:'gallery' , component: GalleryComponent},
+    {title: "ADS | Services", path:'services' , component: ServicesComponent},
+    {title: "ADS | Not Found", path:'**' , component: NotfoundComponent},
+
 ];
