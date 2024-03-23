@@ -62,6 +62,34 @@ configuration = configItem [] = [
    ] 
 }
 },
+{id:5,
+name:"pricing",
+title:"YOUR CHOICE",
+description:"We have the right packahe for you",
+detail:"lorem ipsum dolor sit ament, consetuiy jol",
+pricingBlocks: [
+  {id:1,
+    description: "lorem ipsum"
+    title:"PERSONAL",
+    Subtitle:"The stanrd version",
+    currency:"=",
+    feactured:false,
+    Downloads:"9 Downloads",
+    Extensions:"2 Extensions",
+    Tutorials: "Tutorials",
+    Support:"Forum support",
+    updates:"1 año frre updates",
+    buttonText:"buy now"
+  },
+
+
+
+  },
+
+]
+
+
+}
 
 {id:4,
 name:"header",
@@ -71,7 +99,31 @@ data:{
   url: "Namari is a free landing page template you can use for your projects. It is free to use for your \ npersonal and commercial projects enjoy!",
   buttontext:"START CREATING TODAY"
 
-}}
+}
+},
+{id:6,
+name:"services",
+  data:{
+  title:"BELIEVING",
+  description: "Focusing On what Matter Most",
+  detail:'loren ipsum dolro sit amen',
+  }
+},
+{id:7,
+  name:"testimonials",
+  data:{
+    title:"FEEBACK",
+    description:"Whar our coaustomer are saying",
+    detail:'',
+    feedbackBlock:[
+      {name: 'John Doe',userimage: '../assets/images/user-images/user-1.jpg',comments:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua'},
+      {name: 'Roslyn Doe',userimage: '../assets/images/user-images/user-2.jpg',comments:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua'},
+      {name: 'Thomas Doe',userimage: '../assets/images/user-images/user-3.jpg',comments:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua'},
+    ]
+  }
+
+},
+
 
 ];
 

@@ -1,4 +1,4 @@
-import { Component,inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ConfigItem } from '../../services/config-item';
 import { ConfigService } from '../../services/config.service';
 
@@ -7,16 +7,14 @@ import { ConfigService } from '../../services/config.service';
   standalone: true,
   imports: [],
   templateUrl: './about.component.html',
-  styleUrl: './about.component.scss'
+  styleUrl: './about.component.css'
 })
-export class AboutComponent{
+export class AboutComponent {
   about!: ConfigItem | undefined;
   configService: ConfigService = inject(ConfigService);
 
-  constructor(){
+  constructor()  {
     this.about = this.configService.getPageByName("about");
-    }
+    console.log(this.about);
+  }
 }
-  
-
-
