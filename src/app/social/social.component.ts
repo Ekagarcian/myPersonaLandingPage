@@ -1,21 +1,19 @@
-import { Component,inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ConfigItem } from '../../services/config-item';
 import { ConfigService } from '../../services/config.service';
-
 
 @Component({
   selector: 'app-social',
   standalone: true,
-  imports: [SocialComponent],
+  imports: [],
   templateUrl: './social.component.html',
-  styleUrl: './social.component.scss'
+  styleUrl: './social.component.css'
 })
 export class SocialComponent {
   social!: ConfigItem | undefined;
   configService: ConfigService = inject(ConfigService);
 
-  constructor(){
+  constructor()  {
     this.social = this.configService.getPageByName("social");
-    }
+  }
 }
-
